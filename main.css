@@ -1,0 +1,122 @@
+html {
+    --blue: rgb(59, 126, 241);
+    --very-light-blue: rgb(238, 244, 249);
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: -1;
+}
+
+.background .blue {
+    background-color: var(--blue);
+}
+
+.background .gray {
+    background-color: var(--very-light-blue);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    width: 900px;
+    background: white;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.statistics {
+    background-color: var(--very-light-blue);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    position: relative;
+}
+button{
+    background: blue;
+    height: 40px;
+    width: 200px;
+    color: bisque;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    border-radius: 10px;
+    border-color: cornsilk;
+
+}
+.signup-options{
+    text-align: center;
+}
+
+
+.signup-options img{
+    width: 30px;
+    height:30px;
+}
+
+.create-account {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.signup {
+    max-width: 80%;
+    background: var(--very-light-blue);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.lines {
+    display: flex;
+    justify-content: center;
+}
+
+.lines hr {
+    width: 80px;
+    border-top: 3px solid lightgray;
+}
+
+.lines hr.blue-line {
+    border-top: 3px solid var(--blue);
+}
+
+.logo {
+    height: 70px;
+    width: 100%;
+}
+
+.data {
+    height: 30%;
+    width: 75%;
+    background: white;
+    border-radius: 25px;
+    margin: auto;
+    z-index: 1;
+    box-shadow: 0 0 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background: var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
